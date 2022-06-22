@@ -6,7 +6,7 @@ public class PosterManager {
 
     }
 
-    public PosterManager(int resultLength){
+    public PosterManager(int resultLength) {
         this.resultLength = resultLength;
     }
 

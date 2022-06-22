@@ -19,15 +19,15 @@ public class ServiceTest {
     @Test
     public void showMoviesReversOrder() {
 
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
 
         DataMovie[] actual = manager.findLast();
         DataMovie[] expected = {nine, eight, seven, six, five, four, three, two, one};
@@ -39,17 +39,17 @@ public class ServiceTest {
 
         PosterManager manager = new PosterManager(4);
 
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
-        manager.add (ten);
-        manager.add (eleven);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
+        manager.add(eleven);
 
         DataMovie[] actual = manager.findLast();
         DataMovie[] expected = {eleven, ten, nine, eight};
@@ -59,17 +59,17 @@ public class ServiceTest {
     @Test
     public void showLastTen() {
 
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
-        manager.add (ten);
-        manager.add (eleven);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
+        manager.add(eleven);
 
         DataMovie[] actual = manager.findLast();
         DataMovie[] expected = {eleven, ten, nine, eight, seven, six, five, four, three, two};
