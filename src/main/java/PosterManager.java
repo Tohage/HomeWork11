@@ -1,16 +1,13 @@
 public class PosterManager {
-
-    int resultLength = 10;
+    private int resultLength = 10;
+    private DataMovie[] movies = new DataMovie[0];
 
     public PosterManager() {
-
     }
 
     public PosterManager(int resultLength) {
         this.resultLength = resultLength;
     }
-
-    private DataMovie[] movies = new DataMovie[0];
 
     public void add(DataMovie movie) {
         int length = movies.length + 1;
@@ -35,7 +32,6 @@ public class PosterManager {
             result[i] = movies[index];
         }
         return result;
-
     }
 }
 
