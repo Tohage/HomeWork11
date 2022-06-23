@@ -70,7 +70,45 @@ public class ServiceTest {
         manager.add(eight);
         manager.add(nine);
         manager.add(ten);
+
+        DataMovie[] actual = manager.findLast();
+        DataMovie[] expected = {ten, nine, eight, seven, six, five, four, three, two, one};
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void showLastTenIfLessLimit() {
+
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+
+
+        DataMovie[] actual = manager.findLast();
+        DataMovie[] expected = {eight, seven, six, five, four, three, two, one};
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void showLastTenIfMoreLimit() {
+
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
         manager.add(eleven);
+
 
         DataMovie[] actual = manager.findLast();
         DataMovie[] expected = {eleven, ten, nine, eight, seven, six, five, four, three, two};

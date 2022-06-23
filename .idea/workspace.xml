@@ -51,7 +51,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceTest.showMoviesReversOrder">
+  <component name="RunManager" selected="JUnit.ServiceTest.showLastTenIfMoreLimit">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HomeWork11" />
@@ -68,16 +68,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.findLastAsWeAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork11" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ServiceTest" />
-      <option name="METHOD_NAME" value="findLastAsWeAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceTest.showLastTen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork11" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,11 +78,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.showMoviesReversOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.showLastTenIfLessLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork11" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ServiceTest" />
-      <option name="METHOD_NAME" value="showMoviesReversOrder" />
+      <option name="METHOD_NAME" value="showLastTenIfLessLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.showLastTenIfMoreLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork11" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServiceTest" />
+      <option name="METHOD_NAME" value="showLastTenIfMoreLimit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,10 +100,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ServiceTest.showMoviesReversOrder" />
-        <item itemvalue="JUnit.ServiceTest" />
-        <item itemvalue="JUnit.ServiceTest.findLastAsWeAdd" />
+        <item itemvalue="JUnit.ServiceTest.showLastTenIfMoreLimit" />
         <item itemvalue="JUnit.ServiceTest.showLastTen" />
+        <item itemvalue="JUnit.ServiceTest.showLastTenIfLessLimit" />
+        <item itemvalue="JUnit.ServiceTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -129,5 +129,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
