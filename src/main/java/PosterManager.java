@@ -1,6 +1,7 @@
 public class PosterManager {
-    private int resultLength = 10;
     private DataMovie[] movies = new DataMovie[0];
+
+    private int resultLength = 10;
 
     public PosterManager() {
     }
@@ -24,7 +25,6 @@ public class PosterManager {
 
     public DataMovie[] findLast() {
         if (resultLength > movies.length) {
-            resultLength = movies.length;
         }
         DataMovie[] result = new DataMovie[resultLength];
         for (int i = 0; i < result.length; i++) {
