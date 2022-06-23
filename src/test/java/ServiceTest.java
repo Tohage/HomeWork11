@@ -28,9 +28,10 @@ public class ServiceTest {
         manager.add(seven);
         manager.add(eight);
         manager.add(nine);
+        manager.add(ten);
 
         DataMovie[] actual = manager.findLast();
-        DataMovie[] expected = {nine, eight, seven, six, five, four, three, two, one};
+        DataMovie[] expected = {ten, nine, eight, seven, six, five, four, three, two, one};
         Assertions.assertArrayEquals(expected, actual);
     }
 
